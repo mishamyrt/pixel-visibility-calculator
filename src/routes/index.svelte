@@ -30,23 +30,23 @@
 
 <div class="fields-container">
   <div class="fieldsGroup">
-    <span class="fields-title">Distance:</span>
+    <span class="fields-title">Distance</span>
     <MultiInput bind:value={distance} />
   </div>
   <div class="fieldsGroup">
-    <span class="fields-title">Size:</span>
+    <span class="fields-title">Size</span>
     <MultiInput unit="in" bind:value={size} />
   </div>
   <div class="fieldsGroup">
-    <span class="fields-title">Resolution:</span>
+    <span class="fields-title">Resolution</span>
     <ResolutionInput bind:width bind:height />
   </div>
   <div class={clsx('fieldsGroup', { '__hidden': !isDpiVisible })}>
-    <span class='fields-title'>DPI:</span>
+    <span class='fields-title'>DPI</span>
     <span>{Math.floor(density)}</span>
   </div>
   <div class={clsx('fieldsGroup', { '__hidden': !isResultVisible })}>
-    <span class="fields-title">Pixel visibility:</span>
+    <span class="fields-title">Pixel visibility</span>
     {#if visibilityFactor === 1}
       <span class="visibility __none">None</span>
     {:else if visibilityFactor === 0}

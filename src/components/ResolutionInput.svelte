@@ -4,9 +4,9 @@
 </script>
 
 <div class="resolutionInput">
-  <input type="number" placeholder="Width" class="input" bind:value={width} />
+  <input type="number" placeholder="width" class="input" bind:value={width} />
   <span class="resolutionInput-divider">×</span>
-  <input type="number" placeholder="Height" class="input" bind:value={height} />
+  <input type="number" placeholder="height" class="input" bind:value={height} />
 </div>
 
 <style lang="scss">
