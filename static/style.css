@@ -137,6 +137,7 @@ select:focus {
 @media (max-width: 470px) {
   .description {
     padding: 0 20px;
+    margin-top: 27px;
   }
 }
 
