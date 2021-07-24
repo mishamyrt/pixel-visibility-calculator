@@ -31,11 +31,11 @@
 <div class="fields-container">
   <div class="fieldsGroup">
     <span class="fields-title">Distance:</span>
-    <MultiInput placeholder="3.5" bind:value={distance} />
+    <MultiInput bind:value={distance} />
   </div>
   <div class="fieldsGroup">
     <span class="fields-title">Size:</span>
-    <MultiInput placeholder="43" unit="in" bind:value={size} />
+    <MultiInput unit="in" bind:value={size} />
   </div>
   <div class="fieldsGroup">
     <span class="fields-title">Resolution:</span>
