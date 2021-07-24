@@ -6,8 +6,8 @@
 
   let distance = 0;
   let size = 0;
-  let width = 0;
-  let height = 0;
+  let width: number;
+  let height: number;
 
   function getFactorClass(val: number) {
     if (val > 0) {
