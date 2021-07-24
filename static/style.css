@@ -125,12 +125,12 @@ select:focus {
 }
 
 @media (max-width: 740px) {
-  .fields {
+  .fieldsGroup {
     grid-gap: 26px;
     grid-template-columns: 126px 1fr;
     width: 100%;
     padding: 0 20px;
-    margin: 33px auto 0;
+    margin: 6px auto 0;
   }
 }
 
@@ -141,14 +141,24 @@ select:focus {
 }
 
 @media (max-width: 400px) {
-  .fields {
+  .fields-title {
+    text-align: left;
+  }
+
+  .fieldsGroup.__forceGrid {
+    display: flex;
+    margin-top: 19px;
+    gap: 6px;
+  }
+
+  .fieldsGroup:not(.__forceGrid) {
     gap: 5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .fields-title {
+  .fieldsGroup:not(.__forceGrid) .fields-title {
     margin-top: 10px;
   }
 }

@@ -41,11 +41,11 @@
     <span class="fields-title">Resolution</span>
     <ResolutionInput bind:width bind:height />
   </div>
-  <div class={clsx('fieldsGroup', { '__hidden': !isDpiVisible })}>
+  <div class={clsx('fieldsGroup __forceGrid', { '__hidden': !isDpiVisible })}>
     <span class='fields-title'>DPI</span>
     <span>{Math.floor(density)}</span>
   </div>
-  <div class={clsx('fieldsGroup', { '__hidden': !isResultVisible })}>
+  <div class={clsx('fieldsGroup __forceGrid', { '__hidden': !isResultVisible })}>
     <span class="fields-title">Pixel visibility</span>
     {#if visibilityFactor === 1}
       <span class="visibility __none">None</span>
