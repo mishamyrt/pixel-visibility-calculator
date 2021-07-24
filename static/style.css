@@ -3,10 +3,10 @@ body {
     font-size: 20px;
     font-weight: 400;
 
-    --color-red: #FF2D55;
-    --color-green: #34C759;
-    --color-blue: #007AFF;
-    --color-orange: #FF9500;
+    --color-red: #ff2d55;
+    --color-green: #34c759;
+    --color-blue: #007aff;
+    --color-orange: #ff9500;
     --color-accent: var(--color-blue);
 }
 
@@ -20,6 +20,9 @@ body {
     grid-template-rows: repeat(20, 40px);
     align-items: center;
     grid-gap: 15px;
+    width: 60%;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 .fields-title {
@@ -29,22 +32,22 @@ body {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;       /* Remove default arrow */
+    appearance: none; /* Remove default arrow */
     border: none;
     font-size: 20px;
- }
+}
 
 .input {
     border: 2px solid var(--color-accent);
