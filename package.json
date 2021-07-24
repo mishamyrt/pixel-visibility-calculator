@@ -1,6 +1,7 @@
 {
   "name": "pixel-visibility-calculator",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
