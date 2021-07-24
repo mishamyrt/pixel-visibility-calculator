@@ -68,7 +68,7 @@
     the screens in real life.
   </p>
   <p>
-    For example, if you watch a 4k 43" screen from 3 meters away, you won't
+    For example, if you watch a 4K 43" screen from 3 meters away, you won't
     notice the difference if it' replaced with a 1080p.
   </p>
 </div>

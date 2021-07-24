@@ -2,7 +2,7 @@
 
 A browser-based application that allows you to calculate the necessary resolution for comfortable viewing of content.
 
-For example, if you want to buy a 4k TV, and all calculations show that you will not see the difference with 1080p, you can save money.
+For example, if you want to buy a 4K TV, and all calculations show that you will not see the difference with 1080p, you can save money.
 
 ## Developing
 

@@ -10,7 +10,7 @@
     value = convertToMeter(rawValue, unit);
   }
 
-  $: placeholder = `in ${UNITS_NAMES[unit]}`
+  $: placeholder = `in ${UNITS_NAMES[unit]}`;
 </script>
 
 <div class="multiInput">
