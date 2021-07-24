@@ -35,6 +35,7 @@
 <style lang="scss">
     .multiInput {
         position: relative;
+        width: 100%;
         &-input {
             width: 100%;
         }
