@@ -47,19 +47,30 @@
             width: 48px;
             line-height: 1;
             text-align: center;
+            z-index: 2;
+            pointer-events: none;
         }
 
         &-select {
             position: absolute;
-            right: 2px;
-            top: 3px;
+            right: 0;
+            top: 2px;
             background: transparent;
             text-align: center;
             padding: 0;
             margin: 0;
-            width: 48px;
-            height: 31px;
-            opacity: 0;
+            width: 52px;
+            height: 34px;
+            color: transparent;
+            border-radius: 0 4px 4px 0;
+            background-color: transparent;
+            z-index: 1;
+            transition: background-color 0.3s ease-out;
+
+            &:hover {
+                transition: background-color 0s ease-out;
+                background-color: rgba(0, 122, 255, 0.18);
+            }
         }
 
         &::after {
