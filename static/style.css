@@ -6,14 +6,30 @@ body {
   min-width: 230px;
   --color-background: white;
   --color-text: #1d1d1f;
-  --color-red: #ff2d55;
-  --color-green: #34c759;
+  --color-text-secondary: #86868b;
   --color-blue: #007aff;
+  --color-blue-outline: 0 0 0 4px rgba(0, 122, 155, 0.6);
+  --color-green: #34c759;
+  --color-gray: #d2d2d7;
+  --color-red: #ff2d55;
   --color-orange: #ff9500;
   --color-accent: var(--color-blue);
-  --color-gray: #d2d2d7;
   background-color: var(--color-background);
   color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-background: #0c0c0c;
+    --color-text: #ececec;
+    --color-text-secondary: #555;
+    --color-blue: #0A84FF;
+    --color-blue-outline: 0 0 0 4px rgba(10, 132, 255, 0.6);
+    --color-green: #34c759;
+    --color-gray: #56565c;
+    --color-red: #FF3760;
+    --color-orange: #FF9F09;
+  }
 }
 
 * {
@@ -32,7 +48,7 @@ body {
 }
 
 .description {
-  color: #959595;
+  color: var(--color-text-secondary);
   max-width: 400px;
   margin: 45px auto 0;
   font-size: 17px;
@@ -63,8 +79,8 @@ select {
   border: none;
   font-size: 20px;
   color: var(--color-text);
-  box-shadow: 0 0 0 white;
-  transition: box-shadow .25s ease-out;
+  box-shadow: 0 0 0 var(--color-background);
+  transition: box-shadow 0.25s ease-out;
 }
 
 .input {
@@ -72,16 +88,17 @@ select {
   border-radius: 12px;
   font-size: 20px;
   padding: 11px 15px;
-  box-shadow: 0 0 0 white;
-
-  transition: box-shadow .25s ease-out;
+  box-shadow: 0 0 0 var(--color-background);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  transition: box-shadow 0.25s ease-out;
 }
 
 .input:focus,
 select:focus {
   outline: none;
   border: 1px solid var(--color-blue);
-  box-shadow: 0 0 0 4px rgba(0,125,250,.6);
+  box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.6);
 }
 
 .visibility {
