@@ -53,7 +53,7 @@
     &-select {
       position: absolute;
       right: 0;
-      top: 2px;
+      top: 0;
       background: transparent;
       text-align: center;
       padding: 0;
