@@ -36,21 +36,32 @@ body {
   box-sizing: border-box;
 }
 
-.fields {
+.fields-container {
+  margin-top: 35px;
+}
+
+.fieldsGroup {
   display: grid;
   grid-template-columns: 150px 1fr;
-  grid-template-rows: repeat(3, 53px);
+  grid-template-rows: 53px;
   align-items: center;
   grid-gap: 15px;
   width: 60%;
   max-width: 450px;
-  margin: 45px auto 0;
+  margin: 10px auto 0;
+  opacity: 1;
+  transition: opacity .25s linear;
+}
+
+.fieldsGroup.__hidden {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .description {
   color: var(--color-text-secondary);
   max-width: 400px;
-  margin: 45px auto 0;
+  margin: 17px auto 0;
   font-size: 17px;
   line-height: 1.51;
   letter-spacing: -0.35px;
