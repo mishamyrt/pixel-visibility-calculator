@@ -46,7 +46,7 @@
       text-align: center;
       z-index: 2;
       pointer-events: none;
-      color: #86868b;
+      color: var(--color-text-secondary);
     }
 
     &-select {
