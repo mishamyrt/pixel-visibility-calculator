@@ -8,6 +8,7 @@ body {
     --color-blue: #007aff;
     --color-orange: #ff9500;
     --color-accent: var(--color-blue);
+    -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -17,12 +18,20 @@ body {
 .fields {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: repeat(20, 40px);
+    grid-template-rows: repeat(3, 40px);
     align-items: center;
     grid-gap: 15px;
     width: 60%;
     max-width: 450px;
-    margin: 0 auto;
+    margin: 45px auto 0;
+}
+
+.description {
+    color: #959595;
+    max-width: 400px;
+    margin: 45px auto 0;
+    font-size: 16px;
+    line-height: 1.55;
 }
 
 .fields-title {

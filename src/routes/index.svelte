@@ -48,3 +48,8 @@
         {/if}
     {/if}
 </div>
+<div class="description">
+    <p>Marketing companies are increasing demands on the screens, offering more and more affordable 4k screens. That's great, but do we really need these resolutions?</p>
+    <p>The resolution of your eyesight won't get any higher from this purchase.  With this calculator you can verify if you can see the difference between the screens in real life.</p>
+    <p>For example, if you watch a 4k 43" screen from 3 meters away, you won't notice the difference if it' replaced with a 1080p.</p>
+</div>
