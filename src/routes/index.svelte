@@ -1,18 +1,16 @@
 <script lang="ts">
     import ResolutionInput from "../components/ResolutionInput.svelte";
     import MultiInput from "../components/MultiInput.svelte";
+    import {
+        calculateDPI,
+        calculateVisibilityFactor,
+    } from "../modules/display";
+    import { metersToInches } from "../modules/units";
 
-    let distance;
-    let size;
-    let width;
-    let height;
-
-    function calculateDensity(size, width, height) {
-        const value = Math.round(
-            Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2)) / size
-        );
-        return value || 0;
-    }
+    let distance = 0;
+    let size = 0;
+    let width = 0;
+    let height = 0;
 
     function getFactorClass(val: number) {
         if (val > 0) {
@@ -24,23 +22,22 @@
         }
     }
 
-    $: density = calculateDensity(size, width, height);
+    $: density = calculateDPI(metersToInches(size), width, height);
     $: visibilityFactor = getFactorClass(
-        (distance * 2 * Math.PI) / 21600 - 2.54 / density
+        calculateVisibilityFactor(distance, density)
     );
 </script>
 
-<!-- <input name="distance" type="number" value={distance} /> -->
 <div class="fields">
     <span class="fields-title">Distance:</span>
-    <MultiInput bind:value={distance} />
+    <MultiInput placeholder="3.5" bind:value={distance} />
     <span class="fields-title">Size:</span>
-    <MultiInput bind:value={size} />
+    <MultiInput placeholder="43" unit="in" bind:value={size} />
     <span class="fields-title">Resolution:</span>
     <ResolutionInput bind:width bind:height />
     {#if density}
-        <span class="fields-title">Density:</span>
-        <span>{density}</span>
+        <span class="fields-title">DPI:</span>
+        <span>{Math.floor(density)}</span>
         <span class="fields-title">Pixel visibility:</span>
         {#if visibilityFactor === 1}
             <span class="visibility __none">None</span>
@@ -51,8 +48,3 @@
         {/if}
     {/if}
 </div>
-
-<!-- <input name="size" type="number" bind:value={size} /> -->
-<!-- <input name="width" type="number" bind:value={width} />
-<input name="height" type="number" bind:value={height} /> -->
-<!-- <span>Pixel visibilty:</span><span></span> -->
