@@ -103,6 +103,7 @@ select {
   color: var(--color-text);
   background-color: var(--color-background);
   transition: box-shadow 0.25s ease-out;
+  margin: 0;
 }
 
 .input:focus,

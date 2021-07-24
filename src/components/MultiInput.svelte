@@ -73,7 +73,7 @@
       height: 46px;
       width: 1px;
       background-color: var(--color-gray);
-      top: 3px;
+      top: 0;
       right: 50px;
     }
   }
