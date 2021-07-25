@@ -1,0 +1,7 @@
+{
+  "svelte.plugin.typescript.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "svelte"
+  ]
+}
