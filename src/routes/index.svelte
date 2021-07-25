@@ -59,7 +59,7 @@
 <div class="description">
   <p>
     Marketing companies are increasing demands on the screens, offering more and
-    more affordable 4k screens. That's great, but do we really need these
+    more affordable 4K screens. That's great, but do we really need these
     resolutions?
   </p>
   <p>
