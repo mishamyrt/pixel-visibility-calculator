@@ -1,29 +1,29 @@
 <script lang="ts">
-  import ResolutionInput from "../components/ResolutionInput.svelte";
-  import MultiInput from "../components/MultiInput.svelte";
-  import { calculateDPI, calculateVisibilityFactor } from "../modules/display";
-  import { metersToInches } from "../modules/units";
+  import ResolutionInput from '../components/ResolutionInput.svelte'
+  import MultiInput from '../components/MultiInput.svelte'
+  import { calculateDPI, calculateVisibilityFactor } from '../modules/display'
+  import { metersToInches } from '../modules/units'
   import clsx from 'clsx'
 
-  let distance = 0;
-  let size = 0;
-  let width: number;
-  let height: number;
+  let distance = 0
+  let size = 0
+  let width: number
+  let height: number
 
   function getFactorClass(val: number) {
     if (val > 0) {
-      return 1;
+      return 1
     } else if (val >= -0.005) {
-      return 0;
+      return 0
     } else {
-      return -1;
+      return -1
     }
   }
 
-  $: density = calculateDPI(metersToInches(size), width, height);
+  $: density = calculateDPI(metersToInches(size), width, height)
   $: visibilityFactor = getFactorClass(
     calculateVisibilityFactor(distance, density)
-  );
+  )
   $: isDpiVisible = size * width * height > 0
   $: isResultVisible = isDpiVisible && distance > 0
 </script>
@@ -41,11 +41,11 @@
     <span class="fields-title">Resolution</span>
     <ResolutionInput bind:width bind:height />
   </div>
-  <div class={clsx('fieldsGroup __forceGrid', { '__hidden': !isDpiVisible })}>
-    <span class='fields-title'>DPI</span>
+  <div class={clsx('fieldsGroup __forceGrid', { __hidden: !isDpiVisible })}>
+    <span class="fields-title">DPI</span>
     <span>{Math.floor(density)}</span>
   </div>
-  <div class={clsx('fieldsGroup __forceGrid', { '__hidden': !isResultVisible })}>
+  <div class={clsx('fieldsGroup __forceGrid', { __hidden: !isResultVisible })}>
     <span class="fields-title">Pixel visibility</span>
     {#if visibilityFactor === 1}
       <span class="visibility __none">None</span>

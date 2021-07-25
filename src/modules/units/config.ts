@@ -1,9 +1,9 @@
-import type { IUnitsConfig } from "./interfaces";
+import type { IUnitsConfig } from './interfaces'
 
 export const UNITS_CONFIG: IUnitsConfig = {
-    m: 1,
-    cm: 0.01,
-    in: 0.0254,
+  m: 1,
+  cm: 0.01,
+  in: 0.0254
 }
 
 export const UNITS_NAMES = {

@@ -1,16 +1,16 @@
 <script lang="ts">
-  import { UNITS_CONFIG, UNITS_NAMES, convertToMeter } from "../modules/units";
-  import type { UnitsType } from "../modules/units";
+  import type { UnitsType } from '../modules/units'
+  import { UNITS_CONFIG, UNITS_NAMES, convertToMeter } from '../modules/units'
 
-  export let value;
-  export let unit: UnitsType = "m";
-  let rawValue;
+  export let value
+  export let unit: UnitsType = 'm'
+  let rawValue
 
   function handleChange() {
-    value = convertToMeter(rawValue, unit);
+    value = convertToMeter(rawValue, unit)
   }
 
-  $: placeholder = `in ${UNITS_NAMES[unit]}`;
+  $: placeholder = `in ${UNITS_NAMES[unit]}`
 </script>
 
 <div class="multiInput">
@@ -67,7 +67,7 @@
     }
 
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       height: 46px;

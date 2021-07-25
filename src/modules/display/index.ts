@@ -20,7 +20,7 @@ const sphereSize = (s: number): number => s * 2 * Math.PI
 /**
  * Determines the arc minute size for a given size
  * @param v - Input value
- * @returns 
+ * @returns
  */
 const arcMinute = (v: number): number => v / 21600
 
@@ -31,14 +31,14 @@ const arcMinute = (v: number): number => v / 21600
  * @param height  - Number of pixels vertically.
  */
 export const calculateDPI = (
-    size: number,
-    width: number,
-    height: number
+  size: number,
+  width: number,
+  height: number
 ): number => {
-    console.log(size, width, height)
-    return (
-        Math.sqrt(square(width) + square(height)) / size
-    ) || 0;
+  console.log(size, width, height)
+  return (
+    Math.sqrt(square(width) + square(height)) / size
+  ) || 0
 }
 
 /**
@@ -49,6 +49,6 @@ export const calculateDPI = (
  * then even a person with perfect eyesight cannot see individual pixels.
  */
 export const calculateVisibilityFactor = (
-    distance: number,
-    density: number
+  distance: number,
+  density: number
 ): number => arcMinute(sphereSize(distance)) - pixelSize(density)

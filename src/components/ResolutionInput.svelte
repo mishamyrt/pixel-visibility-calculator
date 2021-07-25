@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let width;
-  export let height;
+  export let width
+  export let height
 </script>
 
 <div class="resolutionInput">

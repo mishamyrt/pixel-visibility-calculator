@@ -1,4 +1,4 @@
-import { UNITS_CONFIG } from "./config"
+import { UNITS_CONFIG } from './config'
 import type { UnitsType } from './interfaces'
 
 /**
@@ -7,7 +7,7 @@ import type { UnitsType } from './interfaces'
  * @param unit - Current unit
  */
 export const convertToMeter = (value: number, unit: UnitsType): number =>
-    value * UNITS_CONFIG[unit]
+  value * UNITS_CONFIG[unit]
 
 /**
  * Converts meters to inches
