@@ -1,5 +1,4 @@
 <script lang="ts">
-  /* eslint-disable @typescript-eslint/no-unused-vars */
   import type { UnitsType } from '../modules/units'
   import { UNITS_CONFIG, UNITS_NAMES, convertToMeter } from '../modules/units'
 
@@ -10,13 +9,11 @@
   function handleChange() {
     value = convertToMeter(rawValue, unit)
   }
-
-  $: placeholder = `in ${UNITS_NAMES[unit]}`
 </script>
 
 <div class="multiInput">
   <input
-    {placeholder}
+    placeholder={`in ${UNITS_NAMES[unit]}`}
     type="number"
     bind:value={rawValue}
     on:keyup={handleChange}
