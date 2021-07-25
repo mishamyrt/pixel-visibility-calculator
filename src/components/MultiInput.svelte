@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* eslint-disable @typescript-eslint/no-unused-vars */
   import type { UnitsType } from '../modules/units'
   import { UNITS_CONFIG, UNITS_NAMES, convertToMeter } from '../modules/units'
 
