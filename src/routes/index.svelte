@@ -30,16 +30,16 @@
 
 <div class="fields-container">
   <div class="fieldsGroup">
-    <span class="fields-title">Distance</span>
-    <MultiInput bind:value={distance} />
+    <span class="fields-title">Resolution</span>
+    <ResolutionInput bind:width bind:height />
   </div>
   <div class="fieldsGroup">
     <span class="fields-title">Size</span>
     <MultiInput unit="in" bind:value={size} />
   </div>
   <div class="fieldsGroup">
-    <span class="fields-title">Resolution</span>
-    <ResolutionInput bind:width bind:height />
+    <span class="fields-title">Distance</span>
+    <MultiInput bind:value={distance} />
   </div>
   <div class={clsx('fieldsGroup __forceGrid', { __hidden: !isDpiVisible })}>
     <span class="fields-title">DPI</span>
