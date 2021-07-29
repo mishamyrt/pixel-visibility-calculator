@@ -4,6 +4,7 @@
   import { calculateDPI, calculateVisibilityFactor } from '../modules/display'
   import { metersToInches } from '../modules/units'
   import clsx from 'clsx'
+  import '../style.scss'
 
   let distance = 0
   let size = 0
