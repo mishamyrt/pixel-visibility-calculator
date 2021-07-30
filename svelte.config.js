@@ -14,7 +14,7 @@ const config = {
       // default options are shown
       pages: 'build',
       assets: 'build',
-      fallback: 'index.html'
+      fallback: null
     }),
     paths: {
       base: '/pixel-visibility-calculator'
