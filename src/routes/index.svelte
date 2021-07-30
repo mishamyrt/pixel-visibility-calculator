@@ -6,6 +6,8 @@
   import clsx from 'clsx'
   import '../style.scss'
 
+  export const prerender = true
+
   let distance = 0
   let size = 0
   let width: number
