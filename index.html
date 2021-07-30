@@ -10,37 +10,21 @@
 
 		
 
-		<link rel="modulepreload" href="/pixel-visibility-calculator/_app/start-d132dc6d.js">
+		<link rel="modulepreload" href="/pixel-visibility-calculator/_app/start-efdf7d7f.js">
 		<link rel="modulepreload" href="/pixel-visibility-calculator/_app/chunks/vendor-d81eeb2a.js">
-		<link rel="modulepreload" href="/pixel-visibility-calculator/_app/layout.svelte-38051a70.js">
-		<link rel="modulepreload" href="/pixel-visibility-calculator/_app/pages/index.svelte-b91e0751.js">
 		<link rel="stylesheet" href="/pixel-visibility-calculator/_app/assets/start-a8cd1609.css">
-		<link rel="stylesheet" href="/pixel-visibility-calculator/_app/assets/pages/index.svelte-641d12f9.css">
 
 		<script type="module">
-			import { start } from "/pixel-visibility-calculator/_app/start-d132dc6d.js";
+			import { start } from "/pixel-visibility-calculator/_app/start-efdf7d7f.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/pixel-visibility-calculator","assets":"/pixel-visibility-calculator"},
 				session: {},
 				host: location.host,
 				route: true,
-				spa: false,
+				spa: true,
 				trailing_slash: "never",
-				hydrate: {
-					status: 200,
-					error: null,
-					nodes: [
-						import("/pixel-visibility-calculator/_app/layout.svelte-38051a70.js"),
-						import("/pixel-visibility-calculator/_app/pages/index.svelte-b91e0751.js")
-					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "/",
-						query: new URLSearchParams(""),
-						params: {}
-					}
-				}
+				hydrate: null
 			});
 		</script>
 	</head>
@@ -48,36 +32,7 @@
 		<div id="svelte">
 
 
-<div class="fields-container"><div class="fieldsGroup"><span class="fields-title">Distance</span>
-    <div class="multiInput svelte-hfaiwf"><input placeholder="in meters" type="number" class="multiInput-input input svelte-hfaiwf">
-  <span class="multiInput-value svelte-hfaiwf">m</span>
-  <select class="multiInput-select svelte-hfaiwf"><option value="m">m</option><option value="cm">cm</option><option value="in">in</option></select>
-</div></div>
-  <div class="fieldsGroup"><span class="fields-title">Size</span>
-    <div class="multiInput svelte-hfaiwf"><input placeholder="in inches" type="number" class="multiInput-input input svelte-hfaiwf">
-  <span class="multiInput-value svelte-hfaiwf">in</span>
-  <select class="multiInput-select svelte-hfaiwf"><option value="m">m</option><option value="cm">cm</option><option value="in">in</option></select>
-</div></div>
-  <div class="fieldsGroup"><span class="fields-title">Resolution</span>
-    <div class="resolutionInput svelte-1hvxhbq"><input type="number" placeholder="width" class="input svelte-1hvxhbq">
-  <span class="resolutionInput-divider svelte-1hvxhbq">×</span>
-  <input type="number" placeholder="height" class="input svelte-1hvxhbq">
-</div></div>
-  <div class="fieldsGroup __forceGrid __hidden"><span class="fields-title">DPI</span>
-    <span>0</span></div>
-  <div class="fieldsGroup __forceGrid __hidden"><span class="fields-title">Pixel visibility</span>
-    <span class="visibility __high">High</span></div></div>
-<div class="description"><p>Marketing companies are increasing demands on the screens, offering more and
-    more affordable 4K screens. That&#39;s great, but do we really need these
-    resolutions?
-  </p>
-  <p>The resolution of your eyesight won&#39;t get any higher from this purchase.
-    With this calculator you can verify if you can see the difference between
-    the screens in real life.
-  </p>
-  <p>For example, if you watch a 4K 43&quot; screen from 3 meters away, you won&#39;t
-    notice the difference if it&#39; replaced with a 1080p.
-  </p></div>
+
 
 
 
